@@ -7,7 +7,7 @@ const ManageServices = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you sure you want to delete this service?');
         if (proceed) {
-            const url = `http://localhost:5000/service/${id}`
+            const url = `https://pacific-falls-56378.herokuapp.com/service/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
